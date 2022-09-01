@@ -1,4 +1,33 @@
-body{
-    height: 100vh;
-    background-color: aquamarine;
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: rgb(249, 219, 109);
+  background: linear-gradient(
+      130deg,
+      rgba(249, 219, 109, 1) 32%,
+      rgba(244, 237, 237, 1) 100%
+    )
+    fixed;
 }
+#root {
+  min-height: 100vh;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+.component-wrapper {
+  width: 50%;
+  min-height: 30vh;
+}
+::placeholder {
+  color: white;
+  opacity: 0.7;
+}
+
+@import "./inputform";
+@import "./todo";
+@import "./todocontainer";

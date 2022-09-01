@@ -1,0 +1,51 @@
+.todo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 10vh;
+  input {
+    width: 460px;
+    height: 50px;
+    background-color: #464d77;
+    margin-right: 10px;
+    border-radius: 10px 0 0 10px;
+    color: white;
+    font-size: 30px;
+    border: none;
+    outline: none;
+    cursor: default;
+  }
+  .icons {
+    width: 100px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .delete {
+      color: rgb(219, 84, 84);
+      height: 50px;
+      margin-left: 10px;
+      &:hover {
+        color: rgb(255, 0, 0);
+        transition: all 0.5s ease;
+      }
+    }
+    .done {
+      color: rgb(75, 177, 75);
+      height: 50px;
+      &:hover {
+        color: rgb(4, 160, 4);
+        transition: all 0.5s ease;
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .todo {
+    input {
+      width: 200px;
+      font-size: 20px;
+    }
+  }
+}
